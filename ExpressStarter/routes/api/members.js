@@ -35,14 +35,13 @@ router.get('/:age',(req,res)=>{
 
 router.post('/',(req,res)=>{
     
-
     var user={
         name:req.body.name,
         age:req.body.age,
         profession:req.body.profession
 
     }
-
+    
     console.log(`name = ${req.body.name}, age = ${user.age},profession = ${user.profession}`)
     if(user.name&&user.age&&user.profession){
 

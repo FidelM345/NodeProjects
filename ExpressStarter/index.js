@@ -40,13 +40,13 @@ app.get('/home', function (req, res) {
 });
 
 
+
 app.get('/forms', function (req, res) {
     res.render('forms');
 });
 
 
 //......................
-
 
 
 app.get('/',(req,res)=>{
@@ -71,7 +71,6 @@ app.get('/contacts',(req,res)=>{
 })
 
 app.use('/api/users',require('./routes/api/members'))
-
 
 app.post('/api/formdata', function (req, res) {
 
